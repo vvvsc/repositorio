@@ -1,5 +1,5 @@
 <?php
-$archivo_lista = 'https://rep.hstn.me/dir.txt'; // Archivo con lista de PDFs
+$archivo_lista = 'https://porcuerda.se.eu.org/lists/repositorio.txt'; // Archivo con lista de PDFs
 $archivo_salida = 'index.html'; // Archivo HTML que se generará
 
 // Abrir archivo lista para lectura
