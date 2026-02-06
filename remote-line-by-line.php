@@ -1,5 +1,5 @@
 <?php
-$archivo_lista = 'https://porcuerda.se.eu.org/lists/mundo.txt'; // Archivo con lista de PDFs
+$archivo_lista = 'https://rep.hstn.me/dir.txt'; // Archivo con lista de PDFs
 $archivo_salida = 'index.html'; // Archivo HTML que se generará
 
 // Abrir archivo lista para lectura
@@ -22,7 +22,7 @@ while (($linea = fgets($handle)) !== false) {
     $linea = trim($linea);
     if ($linea === '') continue;
 
-    $url_pdf = "https://mundo.xo.je/$linea"; // Cambia al dominio real y ruta
+    $url_pdf = "https://rep.hstn.me/$linea"; // Cambia al dominio real y ruta
 
     // Escribir cada entrada en HTML
     fwrite($html_file, "<iframe src=\"$url_pdf\" id=\"$linea\" width=\"600\" height=\"400\"></iframe>\n<br><br>\n");
