@@ -25,7 +25,7 @@ while (($linea = fgets($handle)) !== false) {
     $url_pdf = "https://rep.hstn.me/$linea"; // Cambia al dominio real y ruta
 
     // Escribir cada entrada en HTML
-    fwrite($html_file, "<iframe src=\"$url_pdf\" id=\"$linea\" width=\"80%\" height=\"400\"></iframe>\n<br><br>\n");
+    fwrite($html_file, "<iframe src=\"$url_pdf\" id=\"$linea\" style=\"width: 80%; height: 400px;\"></iframe>\n<br><br>\n");
     fwrite($html_file, "<a href=\"$url_pdf\" download><p>$linea</p></a>\n");
 }
 
