@@ -16,7 +16,7 @@ if (!$html_file) {
 }
 
 // Escribir estructura inicial HTML
-fwrite($html_file, "<!DOCTYPE html>\n<html>\n<head><title>Lista de PDFs</title><link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\"></head>\n<body>\n<img src=\"https://villalba.is.eu.org/img/logo.svg\">");
+fwrite($html_file, "<!DOCTYPE html>\n<html>\n<head><title>Lista de PDFs</title></head>\n<body>\n<img src=\"https://villalba.is.eu.org/img/logo.svg\">");
 
 while (($linea = fgets($handle)) !== false) {
     $linea = trim($linea);
